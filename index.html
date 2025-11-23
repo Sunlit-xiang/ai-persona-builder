@@ -24,7 +24,7 @@
         }
       }
     </script>
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
     "react": "https://aistudiocdn.com/react@^19.2.0",
@@ -39,7 +39,7 @@
 </head>
   <body class="bg-slate-50 text-slate-900 antialiased selection:bg-brand-100">
     <div id="root"></div>
-    <!-- 注意：Vite 开发模式下，源代码请放在 /src 目录 -->
-    <script type="module" src="/src/index.tsx"></script>
+    <!-- 修正：改为引用根目录下的 index.tsx，适配无 src 目录的情况 -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
